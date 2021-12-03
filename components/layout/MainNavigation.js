@@ -6,7 +6,7 @@ function MainNavigation() {
   return (
     <header className={classes.header}>
       <Link href='/'>
-        <div className={classes.logo}>React Meetups</div>
+        <div className={classes.logo}>NextJS Meetups</div>
       </Link>
       <nav>
         <ul>
