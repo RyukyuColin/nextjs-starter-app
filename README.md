@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/70b3dda2-1784-4279-8b13-0b98b48e5f10/deploy-status)](https://app.netlify.com/sites/hungry-swirles-2d25f4/deploys)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
