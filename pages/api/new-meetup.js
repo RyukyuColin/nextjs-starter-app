@@ -1,4 +1,4 @@
-import meetupModel from './src/models/meetup';
+import meetupModel from '../../models/meetup';
 /*
   Path:
     /api/new-meetup

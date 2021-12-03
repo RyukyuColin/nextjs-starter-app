@@ -1,5 +1,5 @@
 import { ObjectId } from 'mongodb';
-import meetupModel from '../api/src/models/meetup';
+import meetupModel from '../../models/meetup';
 
 import MeetupDetail from '../../components/meetups/MeetupDetail';
 
