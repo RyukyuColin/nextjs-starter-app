@@ -1,5 +1,4 @@
-// import { MongoClient } from 'mongodb';
-import meetupModel from './api/src/models/meetup';
+import meetupModel from '../models/meetup';
 import MeetupList from '../components/meetups/MeetupList';
 
 function HomePage(props) {

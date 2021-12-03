@@ -1,4 +1,4 @@
-import mongoClient from '../../../../lib/db/index';
+import mongoClient from '../lib/db/index';
 
 const COLLECTION = 'meetups';
 
