@@ -28,7 +28,7 @@ export async function getStaticPaths() {
   const meetups = await meetupModel.fetchAll({}, { _id: 1 });
 
   return {
-    fallback: process.env.NODE_ENV !== 'development',
+    fallback: process.env.NODE_ENV === 'development' ? false : 'blocking',
     paths: meetups.map((meetup) => ({
       params: { meetupId: meetup._id.toString() },
     })),
