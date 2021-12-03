@@ -1,12 +1,8 @@
 import { MongoClient } from 'mongodb';
 
-const MONGODB_USER = process.env['MONGODB_USER'];
-const MONGODB_PW = process.env['MONGODB_PW'];
+const url = `${process.env['DB_HOST']}://${process.env['DB_USER']}:${process.env['DB_PW']}${process.env['DB_URI']}`;
 
-export default (async () => {
-  const client = await MongoClient.connect(
-    `mongodb+srv://${MONGODB_USER}:${MONGODB_PW}@nextjs-demo.iflv5.mongodb.net/meetups?retryWrites=true&w=majority`
-  );
-
+export default async () => {
+  const client = await MongoClient.connect(url, { useUnifiedTopology: true });
   return client;
-})();
+};
