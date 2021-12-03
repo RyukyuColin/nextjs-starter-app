@@ -13,7 +13,10 @@ const fetchOne = async (query = {}, options = {}) => {
 const fetchAll = async (query = {}, options = {}) => {
   const { db } = await connectToDb();
   const collection = db.collection(COLLECTION);
-  const result = await collection.find(query, options).toArray();
+  const result = await collection
+    .find(query, options)
+    .sort({ _id: -1 })
+    .toArray();
   return result;
 };
 
