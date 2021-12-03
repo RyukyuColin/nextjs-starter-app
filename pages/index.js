@@ -18,7 +18,6 @@ export async function getStaticProps() {
         image: meetup.image,
       })),
     },
-    revalidate: 10,
   };
 }
 export default HomePage;
