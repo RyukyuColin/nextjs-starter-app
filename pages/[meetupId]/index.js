@@ -1,4 +1,5 @@
 import { ObjectId } from 'mongodb';
+import Head from 'next/head';
 import meetupModel from '../../models/meetup';
 
 import MeetupDetail from '../../components/meetups/MeetupDetail';
@@ -7,12 +8,18 @@ function MeetupDetailsPage(props) {
   const { title, image, address, description } = props.meetupData;
 
   return (
-    <MeetupDetail
-      title={title}
-      image={image}
-      address={address}
-      description={description}
-    />
+    <>
+      <Head>
+        <title>{title}</title>
+        <meta name='description' content={description} />
+      </Head>
+      <MeetupDetail
+        title={title}
+        image={image}
+        address={address}
+        description={description}
+      />
+    </>
   );
 }
 
