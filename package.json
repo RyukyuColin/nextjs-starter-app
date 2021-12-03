@@ -9,6 +9,7 @@
     "export": "next export"
   },
   "dependencies": {
+    "@netlify/plugin-nextjs": "^3.9.2",
     "dotenv": "^10.0.0",
     "gray-matter": "^4.0.2",
     "mongodb": "^3.7.3",
